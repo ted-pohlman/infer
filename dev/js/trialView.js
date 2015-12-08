@@ -10,7 +10,7 @@ define([], function() {
 		// Render out a text string to the page
 		render: function() {
 				var item_tpl = this.template(this.model.toJSON());
-				this.$el.html(item_tpl);
+				this.$el.append(item_tpl);
 				return this;
 			}
 			// render: function(){
